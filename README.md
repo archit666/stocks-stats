@@ -23,10 +23,10 @@
 - src/main.tsx: The entry point of the React application. Mounts the root component (App.tsx) into the DOM.
 
 **Technology Stack**
-  React - Frontend framework with useState hook
-  Vite - Build tool and development server
-  Tailwind CSS - Utility-first CSS framework
-  TypeScript - Type safety and better development experience
+  - React: Frontend framework with useState hook
+  - Vite: Build tool and development server
+  - Tailwind CSS: Utility-first CSS framework
+  - TypeScript: Type safety and better development experience
 
 **Assumptions and Limitations**
   - Mock Data: The app currently uses static mock data for a stock. There is no backend or live data fetching as scraping was not possible.
