@@ -10,26 +10,17 @@
 
 **Frontend Architecture**
 
-- src/components/StockStats.tsx
-  A reusable component that displays a label and its corresponding statistic or value.
+- src/components/StockStats.tsx: A reusable component that displays a label and its corresponding statistic or value.
 
-- src/components/StockStats.test.ts
-    Unit test file for the StockStats component.
-    Ensures the component correctly displays the provided label and value.
+- src/components/StockStats.test.tsx : Unit test file for the StockStats component. Ensures the component correctly displays the provided label and value.
 
-- src/containers/StockDetails/index.tsx
-    Main container component that handles the overall functionality for displaying stock details.
+- src/containers/StockDetails/index.tsx: Main container component that handles the overall functionality for displaying stock details.
 
-- src/containers/StockDetails/constants.ts
-    Contains constant values used specifically within the StockDetails container.
+- src/containers/StockDetails/constants.ts: Contains constant values used specifically within the StockDetails container.
 
-- src/App.tsx
-  The root React component of the application.
-  Responsible for rendering the StockDetails component.
+- src/App.tsx: The root React component of the application. Responsible for rendering the StockDetails component.
 
-- src/main.tsx
-  The entry point of the React application.
-  Mounts the root component (App.tsx) into the DOM.
+- src/main.tsx: The entry point of the React application. Mounts the root component (App.tsx) into the DOM.
 
 **Technology Stack**
   React - Frontend framework with useState hook
