@@ -1,6 +1,6 @@
 **Setup Instructions**
 
-  - Node.js (version 14 or higher)
+  - Node.js
   - npm or yarn package manager
   - git clone https://github.com/archit666/stocks-stats
   - cd stocks-data-app
