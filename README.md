@@ -10,16 +10,16 @@
 
 **Frontend Architecture**
 
- src/
+src/
 ├── components/
-│     StockStats.tsx - component which shows the label and stats
-|     StockStats.test.ts - test file for the component to check if it correctly shows label and value
+│   ├── StockStats.tsx - component which shows the label and stats
+│   └── StockStats.test.ts - test file for the component to check if it correctly shows label and value
 ├── containers/
-│     StockDetails/
-        index.tsx - file which has the entire functionality   
-        constants.ts 
+│   └── StockDetails/
+│       ├── index.tsx - file which has the entire functionality   
+│       └── constants.ts 
 ├── App.tsx - renders stockDetails file (root React component)
-├── main.tsx
+└── main.tsx
 
 **Technology Stack**
   React - Frontend framework with useState hook
