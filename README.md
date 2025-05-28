@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+**Setup Instructions**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  - Node.js (version 14 or higher)
+  - npm or yarn package manager
+  - git clone https://github.com/archit666/stocks-stats
+  - cd stocks-data-app
+  - cd frontend
+  - npm install or yarn install
+  - npm run dev or yarn dev
 
-Currently, two official plugins are available:
+**Frontend Architecture**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ src/
+├── components/
+│     StockStats.tsx - component which shows the label and stats
+|     StockStats.test.ts - test file for the component to check if it correctly shows label and value
+├── containers/
+│     StockDetails/
+        index.tsx - file which has the entire functionality   
+        constants.ts 
+├── App.tsx - renders stockDetails file (root React component)
+├── main.tsx
 
-## Expanding the ESLint configuration
+**Technology Stack**
+  React - Frontend framework with useState hook
+  Vite - Build tool and development server
+  Tailwind CSS - Utility-first CSS framework
+  TypeScript - Type safety and better development experience
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+**Assumptions and Limitations**
+  - Mock Data: The app currently uses static mock data for a stock. There is no backend or live data fetching as scraping was not possible.
+  - Search Functionality: The ISIN input and button are implemented, but the functionality for search is pending as function code that runs      on clicking the button is commented for now.
+  
