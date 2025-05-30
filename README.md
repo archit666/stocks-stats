@@ -6,7 +6,10 @@
   - cd stocks-data-app
   - cd frontend
   - npm install or yarn install
-  - npm run dev or yarn dev
+  - npm run dev or yarn dev. You will see a url which you select to open it on browser.
+  - open new terminal tab -> cd .. -> cd backend
+  - npm install and npm run dev
+  - Now since both frontend and backend is running. Open frontend url and you can use the application.
 
 **Frontend Architecture**
 
@@ -21,6 +24,11 @@
 - src/App.tsx: The root React component of the application. Responsible for rendering the StockDetails component.
 
 - src/main.tsx: The entry point of the React application. Mounts the root component (App.tsx) into the DOM.
+
+**Backend Architecture**
+
+- index.ts : Where the server is created. StockStats route is also added here.
+- stockStatsRoutes.ts : Get api for getting html data from screener and scraping logic and returning to frontend
 
 **Technology Stack**
   - React: Frontend framework with useState hook
